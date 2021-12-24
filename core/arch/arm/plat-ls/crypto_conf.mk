@@ -63,6 +63,9 @@ $(call force,CFG_JR_INT,175)  # Default JR IT Number (142 + 32) = 175
 else ifneq (,$(filter $(PLATFORM_FLAVOR),ls1028ardb))
 $(call force,CFG_CAAM_LITTLE_ENDIAN,y)
 $(call force,CFG_JR_INT,175)  # Default JR IT Number (142 + 32) = 175
+else ifneq (,$(filter $(PLATFORM_FLAVOR),mydjls1028))
+$(call force,CFG_CAAM_LITTLE_ENDIAN,y)
+$(call force,CFG_JR_INT,175)  # Default JR IT Number (142 + 32) = 175
 else ifneq (,$(filter $(PLATFORM_FLAVOR),lx2160aqds))
 $(call force,CFG_CAAM_LITTLE_ENDIAN,y)
 $(call force,CFG_JR_INT, 174)

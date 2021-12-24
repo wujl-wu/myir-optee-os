@@ -119,6 +119,16 @@
 #define CAAM_BASE   0x08000000
 #endif
 
+#if defined(PLATFORM_FLAVOR_mydjls1028)
+/*  DUART 1 */
+#define UART0_BASE  0x021C0600
+#define GIC_BASE    0x06000000
+#define GICC_OFFSET 0x0
+#define GICD_OFFSET 0x0
+#define CAAM_BASE   0x08000000
+#endif
+
+
 #if defined(PLATFORM_FLAVOR_lx2160ardb)
 /*  DUART 1 */
 #define UART0_BASE  0x021C0000
